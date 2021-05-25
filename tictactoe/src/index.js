@@ -158,7 +158,9 @@ class Game extends React.Component {
     let status = `Next player: ${current.player}`;
     if(this.isDraw(current)) {
       status = 'No one wins 🙃'
-    } else if (winner) {
+    }
+    
+    if (winner) {
       status = `Payer ${winner} won!`
     }
 
